@@ -20,3 +20,8 @@ jobs:
       with:
         # options to pass to pre-commit run
         extra_args: --verbose
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v3
+      with:
+        name: logs
+        path: /home/runner/.npm/_logs/*.log
