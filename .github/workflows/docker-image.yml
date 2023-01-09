@@ -8,6 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: ls
+      run: ls -lha
     - uses: mr-smithers-excellent/docker-build-push@v5
       name: Build & push Docker image
       with:
