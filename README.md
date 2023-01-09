@@ -1,1 +1,1 @@
-# odoo-devops readme files
+# odoo-devops readme file
