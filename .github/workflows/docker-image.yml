@@ -8,6 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+      name: Check out code
     - name: ls
       run: ls -lha
     - uses: mr-smithers-excellent/docker-build-push@v5
