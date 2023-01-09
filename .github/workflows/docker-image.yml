@@ -15,6 +15,5 @@ jobs:
       with:
         image: dockermanfirst/odoo-14
         registry: docker.io
-        tags: v1, latest
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
