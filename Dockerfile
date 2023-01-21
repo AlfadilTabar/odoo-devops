@@ -5,6 +5,7 @@ RUN mkdir /opt/odoo && mkdir /opt/odoo/extra-addons
 WORKDIR /opt/odoo
 
 COPY requirements.txt requirements.txt
+COPY odoo.conf  /etc/odoo/odoo.conf
 RUN pip3 install -r requirements.txt
 COPY extra-addons /opt/odoo/extra-addons
 RUN chown -R odoo /opt/odoo
